@@ -17,8 +17,8 @@ FARS publishes detailed statistics, but there's little analysis from the driver'
 * **Files used:** Accident (\~39K rows, 80 attributes), Person (\~96K rows, 126 attributes), and Vehicle (\~60K rows, 201 attributes) CSVs, joined on relevant keys after attribute selection
 * **Targets:**
 
-  * `A\_PERINJ` — injury severity
-  * `A\_DOA` — death occurrence
+  * `A_PERINJ` — injury severity
+  * `A_DOA` — death occurrence
 * Key predictors include crash event type, collision direction, vehicle body type, route type, locality (rural/urban), lighting conditions, airbag deployment, drinking status, and more.
 
 ## Methodology
@@ -50,9 +50,9 @@ FARS publishes detailed statistics, but there's little analysis from the driver'
 ## Repository Structure
 
 ```
-├── FARS2022\_Person\_Accident.xlsx           # Preprocessed source dataset
-├── IS597MLC\_Final\_Project\_Yevale\_Jayesh.ipynb   # Main analysis notebook
-├── IS597MLC\_Final\_Project\_Yevale\_Jayesh.pdf     # Full written project report
+├── FARS2022_Person_Accident.xlsx           # Preprocessed source dataset
+├── IS597MLC_Final_Project_Yevale_Jayesh.ipynb   # Main analysis notebook
+├── IS597MLC_Final_Project_Yevale_Jayesh.pdf     # Full written project report
 ├── modules.py                              # Reusable functions: data loading/EDA, model fitting, evaluation
 └── README.md
 ```
@@ -65,12 +65,12 @@ FARS publishes detailed statistics, but there's little analysis from the driver'
    pip install numpy pandas scikit-learn matplotlib seaborn nltk openpyxl
    ```
 
-2. Open `IS597MLC\_Final\_Project\_Yevale\_Jayesh.ipynb` in Jupyter.
+2. Open `IS597MLC_Final_Project_Yevale_Jayesh.ipynb` in Jupyter.
 3. The notebook uses helper functions from `modules.py`:
 
-   * `load\_data(in\_filename, target)` — loads and cleans the dataset, generates EDA plots (class distribution, feature distributions, correlation heatmap), and returns scaled train/test splits.
-   * `fit\_model(X\_train, y\_train, model)` — trains one of `'DT'`, `'SVM'`, `'LR'`, `'RF'`, `'GB'`.
-   * `evaluate\_model(y\_test, y\_pred, eval\_model)` — prints confusion matrix and classification report.
+   * `load_data(in_filename, target)` — loads and cleans the dataset, generates EDA plots (class distribution, feature distributions, correlation heatmap), and returns scaled train/test splits.
+   * `fit_model(X_train, y_train, model)` — trains one of `'DT'`, `'SVM'`, `'LR'`, `'RF'`, `'GB'`.
+   * `evaluate_model(y_test, y_pred, eval_model)` — prints confusion matrix and classification report.
 
 ## Tech Stack
 
@@ -78,9 +78,9 @@ Python · pandas · NumPy · scikit-learn · Matplotlib · Seaborn
 
 ## Full Report
 
-See [`IS597MLC\_Final\_Project\_Yevale\_Jayesh.pdf`](./IS597MLC_Final_Project_Yevale_Jayesh.pdf) for the complete write-up, including literature review and detailed data dictionary.
+See [`IS597MLC_Final_Project_Yevale_Jayesh.pdf`](.IS597MLC_Final_Project_Yevale_Jayesh.pdf) for the complete write-up, including literature review and detailed data dictionary.
 
 ## License
 
-This project is licensed under the \[MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
