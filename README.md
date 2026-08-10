@@ -1,7 +1,6 @@
 # Identifying Crash Patterns for Injury Severity and Death Occurrence Using FARS (2022)
 
-**Course:** IS 597 MLC — Machine Learning Cloud
-
+**Course:** IS 597 MLC — Machine Learning Cloud \
 **Author:** Jayesh Yevale
 
 ## Overview
